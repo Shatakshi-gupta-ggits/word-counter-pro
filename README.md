@@ -1,6 +1,6 @@
 # Word Counter Pro
 
-![Extension Preview](https://raw.githubusercontent.com/Shatakshi-gupta-ggits/word-counter-pro/ss.png)
+![Word Counter Pro Banner](https://github.com/Shatakshi-gupta-ggits/word-counter-pro/blob/main/ss.png?raw=true)
 *Real-time text analysis with adjustable reading speed*
 
 > Stop guessing – know exactly how long your reading will take. Select text and get instant word counts, character stats, and adjustable reading time estimates.
