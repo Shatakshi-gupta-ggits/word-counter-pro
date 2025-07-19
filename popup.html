@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter Pro</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6H21M3 12H15M3 18H21M19 12L15 8M19 12L15 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h1>Word Counter</h1>
+      </div>
+      <button class="theme-toggle" id="themeToggle">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 17.6859L18.5 18.5M21 12H20M18.5 5.5L17.6859 6.31412M6.31412 17.6859L5.5 18.5M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="speed-control">
+      <label for="wpmInput">Reading speed:</label>
+      <input type="number" id="wpmInput" min="100" max="1000" value="200" step="50">
+      <span>words/minute</span>
+    </div>
+
+    <div class="text-input-container">
+      <textarea id="textInput" placeholder="Select text on page or type here..."></textarea>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="wordCount">0</div>
+        <div class="stat-label">Words</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="charCount">0</div>
+        <div class="stat-label">Characters</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="charNoSpaces">0</div>
+        <div class="stat-label">No Spaces</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="readingTime">0s</div>
+        <div class="stat-label">Reading Time</div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button class="btn primary" id="copyBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 16H6C4.89543 16 4 15.1046 4 14V6C4 4.89543 4.89543 4 6 4H14C15.1046 4 16 4.89543 16 6V8M10 20H18C19.1046 20 20 19.1046 20 18V10C20 8.89543 19.1046 8 18 8H10C8.89543 8 8 8.89543 8 10V18C8 19.1046 8.89543 20 10 20Z" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Copy Results
+      </button>
+      <button class="btn secondary" id="clearBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Clear
+      </button>
+    </div>
+  </div>
+
+<footer class="credits">
+  <span>Made with 
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="#ff4757" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </svg>
+    by Shatakshi
+  </span>
+</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
